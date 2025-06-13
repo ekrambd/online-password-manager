@@ -9,6 +9,8 @@ use App\Repositories\Category\CategoryInterface;
 use App\Repositories\Category\CategoryRepository;
 use App\Repositories\User\UserInterface;
 use App\Repositories\User\UserRepository;
+use App\Repositories\Group\GroupInterface;
+use App\Repositories\Group\GroupRepository;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +21,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->bind(CategoryInterface::class, CategoryRepository::class);
         $this->app->bind(UserInterface::class, UserRepository::class);
+        $this->app->bind(GroupInterface::class, GroupRepository::class);
     }
 
     /**

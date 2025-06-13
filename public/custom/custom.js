@@ -10,6 +10,11 @@ $(document).ready(function(){
     $('.select2bs4').select2({
       theme: 'bootstrap4'
     }) 
+
+    $(".select2multiple").select2({
+        theme: "bootstrap4",
+        multiple: true, // Enable multiple selection
+    });
    
 
    //$('.dropify').dropify();

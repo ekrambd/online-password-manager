@@ -20,7 +20,6 @@
  		try
  		{
  			$user = User::create([
- 				'user_id' => user()->id,
  				'role_id' => 2,
  				'name' => $request->name,
  				'email' => $request->email,
