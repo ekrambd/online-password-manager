@@ -19,4 +19,9 @@ class Category extends Model
 
     protected $dates = ['deleted_at'];
 
+    public function passwords()
+    {
+        return $this->hasMany(Password::class);
+    }
+
 }

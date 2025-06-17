@@ -6,6 +6,18 @@
  	return $user;
  }
 
+ 
+ function categoryRepository()
+ {
+    $categoryRepository = app(\App\Repositories\Category\CategoryRepository::class);
+    return $categoryRepository;
+ }
+
+ function categories()
+ {
+    $categories = CategoryRepository()->fetch()->where('status','Active')->where('user_id',user()->id)->latest()->get();
+    return $categories;
+ }
 
  function userRepository()
  {

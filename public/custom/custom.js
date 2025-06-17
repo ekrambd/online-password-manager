@@ -20,13 +20,6 @@ $(document).ready(function(){
    //$('.dropify').dropify();
 
 
-   $('#description').summernote(
-      {
-        height: 150,
-        focus: false
-      }
-    );
-
 
    $('#checkAll').click(function () {    
       $('.category_ids').prop('checked', this.checked);

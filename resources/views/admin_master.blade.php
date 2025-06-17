@@ -253,6 +253,31 @@
               </li>
 
 
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fa fa-lock"></i>
+                  <p>
+                    Passwords
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{{route('passwords.create')}}" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Add Password</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('passwords.index')}}" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>All Password</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+
               <li class="nav-header">Settings</li>
 
               <li class="nav-item">

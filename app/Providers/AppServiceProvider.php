@@ -11,7 +11,8 @@ use App\Repositories\User\UserInterface;
 use App\Repositories\User\UserRepository;
 use App\Repositories\Group\GroupInterface;
 use App\Repositories\Group\GroupRepository;
-
+use App\Repositories\Password\PasswordInterface;
+use App\Repositories\Password\PasswordRepository;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -22,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(CategoryInterface::class, CategoryRepository::class);
         $this->app->bind(UserInterface::class, UserRepository::class);
         $this->app->bind(GroupInterface::class, GroupRepository::class);
+        $this->app->bind(PasswordInterface::class, PasswordRepository::class);
     }
 
     /**
