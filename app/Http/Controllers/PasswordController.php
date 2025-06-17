@@ -127,6 +127,7 @@ class PasswordController extends Controller
      */
     public function destroy(Password $password)
     {
-        //
+        $delete = $this->password->delete($password);
+        return $delete;
     }
 }

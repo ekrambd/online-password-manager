@@ -26,7 +26,7 @@
  				'group_id' => $request->group_id,
  				'category_id' => $request->category_id,
  				'password' => Crypt::encryptString($request->password),
- 				'remarks' => $request->password,
+ 				'remarks' => $request->remarks,
  				'status' => $request->status,
  			]);
  			return response()->json(['status'=>true, 'password_id'=>intval($password->id), 'message'=>'Successfully a password has been added']);
